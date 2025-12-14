@@ -26,21 +26,35 @@
       background: linear-gradient(135deg, #0f4c81, #1a73e8, #6fb1ff);
       color: white;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      text-align: center;
     }
 
-    header h1 {
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .header-content img {
+      width: 240px;
+      height: auto;
+    }
+
+    .header-text h1 {
       margin: 0;
       font-size: 2.2em;
     }
 
-    header p {
+    .header-text p {
       margin-top: 8px;
       font-size: 1.1em;
       opacity: 0.95;
     }
 
     nav {
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     nav a {
@@ -77,12 +91,14 @@
 
 <body>
   <header>
-    <center>
-      <img src="assets/SNHU-Logo.png" width="240" alt="SNHU Logo">
-    </center>
+    <div class="header-content">
+      <img src="assets/SNHU-Logo.png" alt="SNHU Logo">
 
-    <h1>Justin Harrison — ePortfolio</h1>
-    <p>CS-499 Capstone Portfolio | Southern New Hampshire University</p>
+      <div class="header-text">
+        <h1>Justin Harrison — ePortfolio</h1>
+        <p>CS-499 Capstone Portfolio | Southern New Hampshire University</p>
+      </div>
+    </div>
 
     <nav>
       <a href="#self-assessment">Self-Assessment</a>
@@ -121,6 +137,7 @@
   </main>
 </body>
 </html>
+
 
 
 
